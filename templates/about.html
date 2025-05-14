@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Disease Prediction System</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}" />
+</head>
+<body>
+  <div class="about-container">
+    <h2>About Our Project</h2>
+    <div class="about-project-card">
+        
+        <p>
+          Our project, <strong>Virtual Health Assistance Using Machine Learning</strong>, is an intelligent system 
+          designed to predict diseases based on user-reported symptoms. By integrating multiple ML models and 
+          a clean, interactive UI, the system helps users understand their possible health condition and also 
+          find nearby hospitals for further assistance.
+
+        </p>
+    </div>
+    
+      
+
+    <h2 class="section-subtitle">Project Guide</h2>
+    <div class="guide-card">
+      <img src="{{ url_for('static', filename='guide.jpg') }}" alt="Dr. Sukesh" class="profile-img" />
+      <h3>Dr. M. Sukesh</h3>
+      <p>Ph.D. Associate Professor</p>
+    </div>
+
+    <h2 class="section-subtitle">Our Team</h2>
+    <div class="team-row">
+      <div class="team-card">
+        <img src="{{ url_for('static', filename='preetham.jpg') }}" alt="Preetham" class="profile-img" />
+        <h3>Preetham Sharma</h3>
+        <p>UI/UX Designer</p>
+      </div>
+      <div class="team-card">
+        <img src="{{ url_for('static', filename='srivyshnavi.jpg') }}" alt=" Vyshnavi" class="profile-img" />
+        <h3>Sri Vyshnavi</h3>
+        <p>Frontend Developer</p>
+      </div>
+      <div class="team-card">
+        <img src="{{ url_for('static', filename='vineel.jpg') }}" alt="Vineel" class="profile-img" />
+        <h3>Vineel billa</h3>
+        <p> ML Model Developer & Integration</p>
+      </div>
+      <div class="team-card">
+        <img src="{{ url_for('static', filename='naresh.jpg') }}" alt="Naresh" class="profile-img" />
+        <h3>Naresh</h3>
+        <p>Research & Frontend Support</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

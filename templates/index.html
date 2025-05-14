@@ -1,0 +1,54 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Disease Prediction System</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <!-- About Us Button in Top Right -->
+<div class="top-nav">
+  <a href="{{ url_for('about') }}" target="_blank" class="about-btn">About Us</a>
+</div>
+
+  <div class="container">
+    <h1>Disease Prediction System</h1>
+
+    <!-- Search input with mic icon -->
+    <div class="input-wrapper">
+      <input type="text" id="symptomInput" placeholder="Enter symptoms..." oninput="filterSymptoms()" />
+      <img src="{{ url_for('static', filename='mic-icon.jpeg') }}" id="micBtn" onclick="startListening()" alt="Mic" />
+    </div>
+
+    <ul id="suggestionsList"></ul>
+
+    <h2>Selected Symptoms:</h2>
+    <div id="selectedSymptoms" class="tag-container"></div>
+
+    <button onclick="predictDisease()">Predict Disease</button>
+    <div id="loader" style="display: none;">
+      <div class="spinner"></div>
+      <div class="loading-text">Analyzing your symptoms... 🔍 Please wait</div>
+  </div>
+  
+    <div id="predictionResult"></div>
+
+    <button id="clearBtn" style="display:none;" onclick="clearResponse()">Clear Response</button>
+    <div class="loader" id="loader" style="display:none;"></div>
+
+    <!-- Hospital Search Feature -->
+    <!-- HIDDEN by default -->
+<div class="hospital-search" id="hospitalSection" style="display: none;">
+  <input type="text" id="locationInput" placeholder="Enter your location (e.g., Hyderabad)">
+  <button onclick="findHospitals()">Find Nearby Hospitals</button>
+</div>
+
+  </div>
+  
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

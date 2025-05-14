@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f6fb;
+    
+    color: #111;
+  }
+
+  /* body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(to bottom right, #f0f4f8, #dbeafe, #a5b4fc);
+    min-height: 100vh;
+  }
+   */
+   body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f0f8ff 0%, #dce6f9 50%, #b3c5f4 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+
+
+
+  
+  .about-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+  }
+  
+  .project-description {
+    font-size: 1.1em;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+  }
+  
+  .section-subtitle {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin: 30px 0 20px;
+  }
+  
+  .guide-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    padding: 20px;
+    max-width: 350px;
+    margin: 0 auto 40px;
+    transition: transform 0.3s ease;
+  }
+  
+  .guide-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .team-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .team-card {
+    background: #fff;
+    border-radius: 16px;
+    width: 230px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .team-card:hover {
+    transform: translateY(-8px);
+  }
+  
+  .profile-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: top center; /* ensures the face is better centered */
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #3b82f6;
+  }
+  
+
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+}
+
+.container {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* About Our Project Card */
+.about-project-card {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.about-project-card:hover {
+    transform: scale(1.01);
+}
+
+.about-project-card h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+}
+
+.about-project-card p {
+    font-size: 17px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Optional tweak for better spacing */
+.project-guide-section,
+.our-team-section {
+    margin-top: 40px;
+}
+
+  
